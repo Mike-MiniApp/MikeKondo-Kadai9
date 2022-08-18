@@ -14,7 +14,6 @@
 		95AC8D1A28A1BBEF00ED7025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95AC8D1928A1BBEF00ED7025 /* Assets.xcassets */; };
 		95AC8D1D28A1BBEF00ED7025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95AC8D1B28A1BBEF00ED7025 /* LaunchScreen.storyboard */; };
 		95FC11E628A9A8ED00E1627A /* SelectPrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC11E528A9A8ED00E1627A /* SelectPrefectureViewController.swift */; };
-		95FC11E828A9AEA500E1627A /* PrefectureRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC11E728A9AEA500E1627A /* PrefectureRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		95AC8D1C28A1BBEF00ED7025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95AC8D1E28A1BBEF00ED7025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95FC11E528A9A8ED00E1627A /* SelectPrefectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPrefectureViewController.swift; sourceTree = "<group>"; };
-		95FC11E728A9AEA500E1627A /* PrefectureRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				95AC8D1028A1BBEE00ED7025 /* AppDelegate.swift */,
-				95FC11E728A9AEA500E1627A /* PrefectureRepository.swift */,
 				95AC8D1228A1BBEE00ED7025 /* SceneDelegate.swift */,
 				95AC8D1428A1BBEE00ED7025 /* ResultViewController.swift */,
 				95FC11E528A9A8ED00E1627A /* SelectPrefectureViewController.swift */,
@@ -169,7 +166,6 @@
 				95AC8D1128A1BBEE00ED7025 /* AppDelegate.swift in Sources */,
 				95AC8D1328A1BBEE00ED7025 /* SceneDelegate.swift in Sources */,
 				95FC11E628A9A8ED00E1627A /* SelectPrefectureViewController.swift in Sources */,
-				95FC11E828A9AEA500E1627A /* PrefectureRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

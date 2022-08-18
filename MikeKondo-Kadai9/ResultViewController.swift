@@ -11,13 +11,24 @@ class ResultViewController: UIViewController {
     // MARK: - UI Parts
     @IBOutlet private weak var prefectureNameLabel: UILabel!
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        prefectureNameLabel.text = ModelLocator.prefectureRepository.load()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "input":
+            guard let navigation = segue.destination as? UINavigationController else {
+                return
+            }
+            guard let select = navigation.topViewController as? SelectPrefectureViewController else {
+                return
+            }
+            select.delegate = self
+        default:
+            break
+        }
     }
+}
 
-    @IBAction private func didTapInputButton(_ sender: Any) {
-        let selectPrefectureViewController = SelectPrefectureViewController()
-        navigationController?.pushViewController(selectPrefectureViewController, animated: true)
+extension ResultViewController: SelectPrefectureViewControllerDelegate {
+    func didSelectPrefecture(name: String) {
+        prefectureNameLabel.text = name
     }
 }

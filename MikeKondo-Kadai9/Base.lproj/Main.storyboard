@@ -36,8 +36,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="入力"/>
                                         <connections>
-                                            <action selector="didTapInputButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O4V-G5-cnc"/>
-                                            <segue destination="hYh-oR-b91" kind="presentation" id="FhN-jo-YwM"/>
+                                            <segue destination="hYh-oR-b91" kind="presentation" identifier="input" id="FhN-jo-YwM"/>
                                         </connections>
                                     </button>
                                 </subviews>
