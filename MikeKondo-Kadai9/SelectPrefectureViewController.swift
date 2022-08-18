@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol SelectPrefectureViewControllerDelegate: AnyObject {
+    func didSelectPrefecture(name: String)
+}
+
 class SelectPrefectureViewController: UIViewController {
+    weak var delegate: SelectPrefectureViewControllerDelegate?
 
     @IBAction private func didTapCancelButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -30,7 +35,7 @@ class SelectPrefectureViewController: UIViewController {
     }
 
     private func savePrefecture(prefectureName: String) {
-        ModelLocator.prefectureRepository.save(prefectureName: prefectureName)
+        delegate?.didSelectPrefecture(name: prefectureName)
         self.dismiss(animated: true, completion: nil)
     }
 }
